@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kk.levo — креативное агентство</title>
+    <!-- Подключаем шрифт -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- КАСТОМНЫЙ КУРСОР -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- (панель и оверлей) -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="side-panel" id="sidePanel">
+        <div class="panel-header">
+            <div class="panel-logo">kk.<span>levo</span></div>
+            <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="panel-nav">
+            <a href="#services" class="panel-link"><i class="fas fa-star"></i> что мы делаем</a>
+            <a href="#team" class="panel-link"><i class="fas fa-users"></i> команда</a>
+            <a href="#clients" class="panel-link"><i class="fas fa-handshake"></i> клиенты</a>
+            <a href="#contact" class="panel-link"><i class="fas fa-envelope"></i> контакты</a>
+            <a href="#social" class="panel-link"><i class="fas fa-share-alt"></i> соцсети</a>
+        </nav>
+        <div class="panel-footer">
+            <p>© 2026 kk.levo</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ -->
+
+    <div class="container">
+        <!-- ШАПКА -->
+        <div class="header">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="logo">
+                    <img src="logo.png" alt="kk.levo" style="height: 40px; width: auto;">
+                </div>
+            </div>
+
+            <!-- Основная навигация (для больших экранов) -->
+            <div class="nav">
+                <a href="#team">команда</a>
+                <a href="#services">что мы делаем</a>
+                <a href="#clients">клиенты</a>
+                <a href="#contact">контакты</a>
+                <a href="#social" class="nav-social-link">соцсети</a>
+            </div>
+        </div>
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <div class="hero">
+            <h1>мы создаем<br><span class="blue">цифровые миры</span></h1>
+            <p>Креативное агентство, которое превращает сложные идеи в простые и красивые решения</p>
+            <a href="#contact" class="btn">написать нам</a>
+        </div>
+
+        <!-- КОМАНДА -->
+        <h2 class="section-title" id="team">креативная <span>команда</span></h2>
+        <div class="team-grid">
+            <div class="member">
+                <div class="member-photo">
+                    <img src="kiara.jpg" alt="Киара" class="avatar" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #e0e0e0, #f5f5f5)';">
+                </div>
+                <h3>Карина</h3>
+                <p class="member-role">соосновательница</p>
+                <div class="member-social">
+                    <a href="https://www.instagram.com/kiarovna" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://www.tiktok.com/@kiarovna" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+
+            <div class="member">
+                <div class="member-photo">
+                    <img src="katya.jpg" alt="Катя" class="avatar" onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(135deg, #e0e0e0, #f5f5f5)';">
+                </div>
+                <h3>Катя</h3>
+                <p class="member-role">соосновательница</p>
+                <div class="member-social">
+                    <a href="https://www.instagram.com/yofrox" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <!-- УСЛУГИ -->
+        <h2 class="section-title" id="services">что мы <span>делаем</span></h2>
+
+        <div class="services-cards">
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>SMM-ПРОДВИЖЕНИЕ</h3>
+                <p>Комплексное ведение соцсетей и рост аудитории</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3>РАЗРАБОТКА SMM-СТРАТЕГИИ</h3>
+                <p>Индивидуальный план продвижения под ваш бренд</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤖</div>
+                <h3>НЕЙРОКОНТЕНТ</h3>
+                <p>Создание контента с использованием AI</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎬</div>
+                <h3>ВЕРТИКАЛЬНЫЙ КОНТЕНТ</h3>
+                <p>Reels, Shorts, TikTok — трендовый формат</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔥</div>
+                <h3>ИНФОПОВОДЫ</h3>
+                <p>Создание новостей и вирусных тем</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎯</div>
+                <h3>РАЗРАБОТКА КОНЦЕПЦИЙ</h3>
+                <p>Уникальная идея для вашего бренда</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🤝</div>
+                <h3>ИНТЕГРАЦИИ БРЕНДА</h3>
+                <p>Коллаборации и партнерства</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📸</div>
+                <h3>UGC-КОНТЕНТ</h3>
+                <p>Вовлечение аудитории в создание контента</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💬</div>
+                <h3>КОНСУЛЬТАЦИИ</h3>
+                <p>Экспертная помощь и аудит</p>
+            </div>
+        </div>
+
+        <!-- КЛИЕНТЫ (будущий блок) -->
+        <h2 class="section-title" id="clients">нам <span>доверяют</span></h2>
+        <div class="clients-placeholder">
+            <p style="text-align: center; color: #999; padding: 40px; background: #f8f8f8; border-radius: 20px;">
+                Здесь скоро появятся логотипы наших клиентов
+            </p>
+        </div>
+
+        <!-- КОНТАКТЫ -->
+
+        <div class="contact" id="contact">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>давайте создавать вместе</h2>
+                    <p>Расскажите о своём проекте</p>
+                    <div class="contact-details">
+                        <div><i class="far fa-envelope"></i> hello@kklevo.ru</div>
+                        <div><i class="fas fa-phone"></i> +7 (495) 123-45-67</div>
+                        <div><i class="fas fa-map-marker-alt"></i> Москва, ул. Тверская, 7</div>
+                    </div>
+                </div>
+                <form class="form" id="contactForm">
+                    <input type="text" placeholder="имя" required>
+                    <input type="email" placeholder="email" required>
+                    <textarea rows="4" placeholder="сообщение" required></textarea>
+                    <button type="submit" class="btn">отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ПОДВАЛ -->
+        <div class="footer">
+            <div>© 2026 kk.levo</div>
+            <div class="social">
+                <a href="https://www.tiktok.com/@kiarovna" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="https://www.instagram.com/kk.levo" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </div>
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
