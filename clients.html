@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kk.levo — клиенты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- КАСТОМНЫЙ КУРСОР -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- ВЫДВИЖНАЯ ПАНЕЛЬ -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="side-panel" id="sidePanel">
+        <div class="panel-header">
+            <div class="panel-logo">
+                <img src="logo.png" alt="kk.levo" style="height: 35px; width: auto;">
+            </div>
+            <button class="close-panel" id="closePanel"><i class="fas fa-times"></i></button>
+        </div>
+        <nav class="panel-nav">
+            <a href="index.html" class="panel-link"><i class="fas fa-home"></i> главная</a>
+            <a href="services.html" class="panel-link"><i class="fas fa-star"></i> услуги</a>
+            <a href="clients.html" class="panel-link"><i class="fas fa-handshake"></i> клиенты</a>
+            <a href="index.html#contact" class="panel-link"><i class="fas fa-envelope"></i> контакты</a>
+            <a href="index.html#social" class="panel-link"><i class="fas fa-share-alt"></i> соцсети</a>
+        </nav>
+        <div class="panel-footer">
+            <p>© 2026 kk.levo</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- ШАПКА -->
+        <div class="header">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="kk.levo" style="height: 40px; width: auto;"></a>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="index.html" class="nav-social-link">главная</a>
+                <a href="services.html">услуги</a>
+                <a href="clients.html" class="active">клиенты</a>
+                <a href="index.html#contact">контакты</a>
+                <a href="index.html#social">соцсети</a>
+            </div>
+        </div>
+
+        <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+        <div class="page-header">
+            <h1>нам <span class="blue">доверяют</span></h1>
+            <p>Бренды и компании, с которыми мы работали</p>
+        </div>
+
+        <!-- СЕТКА КЛИЕНТОВ -->
+        <div class="clients-grid">
+            <div class="client-card">
+                <div class="client-logo-placeholder">СберМаркет</div>
+                <div class="client-info">
+                    <p>дизайн-система</p>
+                </div>
+            </div>
+            <div class="client-card">
+                <div class="client-logo-placeholder">Yandex Go</div>
+                <div class="client-info">
+                    <p>редизайн приложения</p>
+                </div>
+            </div>
+            <div class="client-card">
+                <div class="client-logo-placeholder">Тинькофф</div>
+                <div class="client-info">
+                    <p>корпоративный сайт</p>
+                </div>
+            </div>
+            <div class="client-card">
+                <div class="client-logo-placeholder">Ozon</div>
+                <div class="client-info">
+                    <p>мобильное приложение</p>
+                </div>
+            </div>
+            <div class="client-card">
+                <div class="client-logo-placeholder">VK Музыка</div>
+                <div class="client-info">
+                    <p>веб-сервис</p>
+                </div>
+            </div>
+            <div class="client-card">
+                <div class="client-logo-placeholder">Авито</div>
+                <div class="client-info">
+                    <p>бренд-стратегия</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ОТЗЫВЫ -->
+        <div class="reviews-section">
+            <h2 class="section-title">что о нас <span>говорят</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">"Отличная команда! Сделали всё быстро и качественно. Результат превзошёл ожидания."</p>
+                    <p class="review-author">— Маркетолог СберМаркет</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Профессионалы своего дела. Рекомендуем!"</p>
+                    <p class="review-author">— Product Manager Yandex Go</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">"Креативный подход и отличная реализация. Обязательно обратимся ещё."</p>
+                    <p class="review-author">— Руководитель отдела маркетинга Ozon</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ПОДВАЛ -->
+        <div class="footer" id="social">
+            <div>© 2026 kk.levo — креативное агентство</div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/kk.levo" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@kiarovna" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+                <a href="#" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
